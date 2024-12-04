@@ -11,10 +11,10 @@ app.listen(
     () => console.log(`server ready at http://localhost"${PORT}`)
 );
 
-// /* 200 OK */ 
-// app.get('/', (req, res) => {
-//     res.sendStatus(200);
-//   });
+/* 200 OK */ 
+app.get('/', (req, res) => {
+    res.sendStatus(200);
+  });
 
 /* JSON */ 
 // app.get("/", (req,res) =>
@@ -32,6 +32,6 @@ app.listen(
 //     });
 
 /* JPG */ 
-app.get('/', (req, res) => {
-      res.sendFile(path.join(__dirname, 'src', '404.jpg'));
-    });
+// app.get('/', (req, res) => {
+//       res.sendFile(path.join(__dirname, 'src', '404.jpg'));
+//     });
